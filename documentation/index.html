@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<!--if lt IE 7html.no-js.lt-ie9.lt-ie8.lt-ie7
+-->
+<!--if IE 7html.no-js.lt-ie9.lt-ie8
+-->
+<!--if IE 8html.no-js.lt-ie9
+-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <!-- if IEmeta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+    -->
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- if lt IE 9
+    script(src="http://html5shim.googlecode.com/svn/trunk/html5.js")
+    
+    -->
+    <!-- stylesheets-->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/docs.css" rel="stylesheet">
+    <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+    <style type="text/css">
+    .colorbox {
+        color: #ffffff;
+        text-align: center;
+        padding: 20px;
+        height: 60px;
+        width: 200px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        float: left;
+        display: inline-block;
+        margin: 5px;
+    }
+
+    h4{
+        margin-top:30px;
+        margin-bottom: 10px;
+    }
+
+    img{
+    	max-width: 800px;
+    	height: auto;
+    	width: 100%;
+    	border: 1px solid #cccccc;
+    	padding: 5px;
+    	border-radius: 0px;
+    	margin: 15px 0 25px 0;
+    }
+    </style>
+</head>
+
+<body data-spy="scroll" data-target=".bs-docs-sidebar">
+    <header role="banner" class="navbar navbar-inverse navbar-fixed-top bs-docs-nav">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="#" target="_blank" class="navbar-brand">Zest: Multi-Concept React Admin Template</a>
+            </div>
+        </div>
+    </header>
+    <div id="content" class="bs-header">
+        <div class="container">
+            <h1>Documentation</h1>
+        </div>
+    </div>
+    <div class="container bs-docs-container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="bs-sidebar hidden-print">
+                    <ul class="nav bs-sidenav">
+                        <li><a href="#intro">Introduction</a></li>
+                        <li><a href="#run">Installation</a></li>
+                        <li><a href="#commands">Commands</a></li>
+                        <li><a href="#file-structure">File Structure</a></li>
+                        <li><a href="#multiple-admin">Multiple Admins</a></li>
+                        <li><a href="#RoutingSystem">Routing</a></li>
+                        <li><a href="#components">Components</a></li>
+                        <li><a href="#layouts">Layout Settings</a></li>
+                        <li><a href="#variables">Variables</a></li>
+                        <li><a href="#grid">Grid Breakpoints</a></li>
+                        <li><a href="#images">Public Images</a></li>
+                        <li><a href="#logoimages">Logo and Favicon</a></li>
+                        <li><a href="#scss">CSS and SCSS</a></li>
+                        <li><a href="#icons">Icons</a></li>
+                        <li><a href="#googlefonts">Google Fonts</a></li>
+                        <li><a href="#plugins-used">Plugins</a></li>
+                        <li><a href="#build">Build & Root Directory</a></li>
+                        <li><a href="#individual">Individual Admin</a></li>
+                        <li><a href="#thanks">Thanks</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div role="main" class="col-md-9">
+                <section id="intro">
+                    <div class="page-header">
+                        <h1>Introduction</h1>
+                    </div>
+                    <p class="lead">"Zest: React Admin" is a premium admin dashboard theme built with the Powerful React framework and Bootstrap 4 with Reactstrap and create-react-app. It is specially designed to give your admin panel a unique and elegant look. It is easy to customize and coded in developer friendly manner. It is one Multi concept theme with tons of pages.</p>
+                    <p class="lead">It is fully responsive admin dashboard template and is adaptive with any size viewport. Solid integration of reusable UI components and latest trending plugins. This theme can be used for various types of project applications. Various niche based admin panels for like Music, CRM, Freelancing, Blogging, Ecommerce, University, Hospital, Social Media and General make this template a complete one stop solution for all your needs.
+                    </p>
+                    <p class="lead">Zest: React Admin includes many react based plugins. It is designed to be a complete admin panel for any web project.</p>
+                </section>
+
+<section id="run">
+                    <div class="page-header">
+                        <h1>Installation & Local Server</h1>
+                    </div>
+                    <p>
+                        You will need to have installed <a href="http://nodejs.org" class="text-info font-bold">Node.js</a> on your computer. Also insure that you have <a href="https://www.npmjs.org/" class="text-info font-bold">NPM</a> installed.
+                        <br> You can check if these are installed properly by opening up a Terminal (Linux or Mac) or Command Prompt (Windows)
+                        <br> and entering the command: <code>node --version</code> and <code>npm --version</code> These commands should output something similar to "v0.10.31" and "1.4.23" respectively.
+                    </p>
+                    <p>Download the project folder and Unzip it on your computer.</p>
+                    <p>Then open your terminal window</p>
+
+                    <p><i>Please note that any commands must be ran from the project's root folder.</i></p>
+                    <h4>Open the your project folder in the terminal as per below instructions</h4>
+                    <p>
+                        Once you have Node and npm installed open your terminal and change the directory to your project folder.
+                    </p>
+                    <p>
+                        On the Mac you can just type
+                    </p>
+                    <pre><span class="text-primary">cd</span></pre>
+                    <p>
+                        into the command line and then drag and drop the project folder on to the terminal window. This will add the path of the project directory next to the <code>cd</code> you just typed. Hit return and you have changed to your project folder.
+                    </p>
+                    <p>
+                        On Windows you will have to open cmd.exe and then type in
+                    </p>
+                    <pre><span class="text-primary">cd</span> path\to\project\directory</pre>
+                    <p>
+                        and hit return to change into your project folder.
+                    </p>
+                    <h4>Installing plugins</h4>
+                    <p>
+                        From the project's root folder type
+                    </p>
+                    <pre>npm install</pre>
+                    <p>
+                        into the command line.
+                    </p>
+
+                    <p>We've made it easy to develop and test on your local machine. You can start a local server by running the command</p>
+                    <p>
+                        From the project's root folder type
+                    </p>
+                    <pre>npm start</pre>
+                    <p>
+                        into the command line.
+                    </p>
+                    <p>This will start a local server and open up your browser.</p>
+                    <p>Then you can start your browser and visit this link</p>
+
+                    <pre>http://localhost:3000/</pre>
+
+
+
+                </section>
+
+
+                <section id="commands">
+                    <div class="page-header">
+                        <h1>Commands</h1>
+                    </div>
+
+                    <p>Below is the list of commands available for this project. Please make sure all these commands are run in terminal with directory set as your project root directory.</p>
+
+
+                        <div class="ct-example"><div class="table-responsive"><table class="table"><thead><tr><th class="text-center">#</th><th>Name</th><th>Usage</th><th class="text-left">Description</th><th class="text-right" style="width:100px;">Read more</th></tr></thead><tbody><tr><td class="text-center">1</td><td><code class="highlighter-rouge">install</code></td><td><code class="highlighter-rouge">npm install</code></td><td class="text-left">This command installs a package, and any packages that it depends on.</td><td class="text-right"><a href="https://docs.npmjs.com/cli/install" target="_blank">Read more</a></td></tr><tr><td class="text-center">2</td><td><code class="highlighter-rouge">start</code></td><td><code class="highlighter-rouge">npm start</code></td><td class="text-left">This will determinate the start of your development server.</td><td class="text-right"><a href="https://facebook.github.io/create-react-app/docs/available-scripts#npm-start" target="_blank">Read more</a></td></tr><tr><td class="text-center">3</td><td><code class="highlighter-rouge">build</code></td><td><code class="highlighter-rouge">npm run build</code></td><td class="text-left">This will create a build directory with a production build of your app.</td><td class="text-right"><a href="https://facebook.github.io/create-react-app/docs/available-scripts#npm-run-build" target="_blank">Read more</a></td></tr><tr><td class="text-center">4</td><td><code class="highlighter-rouge">test</code></td><td><code class="highlighter-rouge">npm run test</code></td><td class="text-left">Runs the test watcher in an interactive mode. (Note that we have not implemented any tests - this command is by default from the create-react-app)</td><td class="text-right"><a href="https://facebook.github.io/create-react-app/docs/available-scripts#npm-test" target="_blank">Read more</a></td></tr><tr><td class="text-center">5</td><td><code class="highlighter-rouge">eject</code></td><td><code class="highlighter-rouge">npm run eject</code></td><td class="text-left">This command will remove the single build dependency from your project. (We do not recommend using this command. Our product may not work after using this command.)</td><td class="text-right"><a href="https://facebook.github.io/create-react-app/docs/available-scripts#npm-run-eject" target="_blank">Read more</a></td></tr><tr><td class="text-center">6</td><td><code class="highlighter-rouge">install:clean</code></td><td><code class="highlighter-rouge">npm run install:clean</code></td><td class="text-left">This command will remove the <code class="highlighter-rouge">node_modules</code> folder and <code class="highlighter-rouge">package_lock.json</code> file, and will install a fresh copy of them.</td><td class="text-right"></td></tr></tbody></table></div></div>
+
+                </section>
+                <section id="file-structure">
+                    <div class="page-header">
+                        <h1>File Structure</h1>
+                    </div>
+                    <p class="lead">Within the download you'll find the following file structure and contents</p>
+                    <p>Once downloaded, unzip the compressed folder and you'll see something like this:</p>
+                    <pre class="prettyprint">
+
+zest-react-admin
+├── CHANGELOG.md
+├── LICENSE.md
+├── README.md
+├── package.json
+├── node_modules
+│   ├── ...
+├── public
+│   ├── ...
+│   ├── ...
+│   ├── index.html
+│   └── manifest.json
+└── src
+    ├── assets
+    │   ├── css
+    │   ├── fonts
+    │   │   └── ...
+    │   ├── img
+    │   │   └── ...
+    │   └── sass
+    │       ├── zest-admin
+    │       │   ├── mixins
+    │       │   │   └── ...
+    │       │   ├── plugins
+    │       │   │   └── ...
+    │       │   └── ...
+    │       └── zest-admin.scss
+    ├── components
+    │   │── blog
+    │   │   ├── ...
+    │   ├── common
+    │   │   ├── ...
+    │   ├── ecommerce
+    │   │   └── ...
+    │   ├── general
+    │   │   └── ...
+    │   ├── hospital
+    │   │   └── ...
+    │   ├── music
+    │   │   └── ...
+    │   ├── social
+    │   │   └── ...
+    │   ├── university
+    │   │   └── ...
+    │   └── index.js
+    ├── index.js
+    ├── routes
+    │   └── ...
+    │   └── ...
+    │   └── index.jsx
+    ├── variables
+    │   │── blog
+    │   │   ├── ...
+    │   ├── crm
+    │   │   ├── ...
+    │   ├── ecommerce
+    │   │   └── ...
+    │   ├── freelance
+    │   │   └── ...
+    │   ├── general
+    │   │   └── ...
+    │   ├── hospital
+    │   │   └── ...
+    │   ├── music
+    │   │   └── ...
+    │   ├── settings
+    │   │   └── ...
+    │   ├── social
+    │   │   └── ...
+    │   ├── university
+    │   │   └── ...
+    │   └── topbar.jsx
+    └── views
+        │── blog
+        │   ├── ...
+        ├── crm
+        │   ├── ...
+        ├── ecommerce
+        │   └── ...
+        ├── freelance
+        │   └── ...
+        ├── general
+        │   └── ...
+        ├── hospital
+        │   └── ...
+        ├── music
+        │   └── ...
+        ├── social
+        │   └── ...
+        ├── university
+        │   └── ...
+        └── index.js
+</pre>
+
+                </section>
+               <section id="multiple-admin">
+                    <div class="page-header">
+                        <h1>Multiple Admins</h1>
+                    </div>
+                    <p>Zest: React Admin has the power of multiple admin themes in one. There are total 9 different admin themes integrated in this one project. Namely General, Hospital, University, Music, CRM, Freelance, Blog, Ecommerce, Social Media.
+                    </p>
+                    <p>All the code is separated properly with proper folder names. You can easily separate and use only one or all admins as per your liking.</p>
+                    <p>The procedure to separate each admin different is explained later in this documentation.</p>
+                </section>
+               <section id="RoutingSystem">
+                    <div class="page-header">
+                        <h1>Routing</h1>
+                    </div>
+                    <p>Zest: React Admin has dynamic routes integrated from a single file. Routing file of each admin is separate and all are located in <code class="highlighter-rouge">src/routes</code> folder of the project.<br/>
+                        You will find routing file of each admin matching its name in this folder.
+                    </p>
+                    <p>Below is how a routing file looks like</p>
+                    <p><ul><li><pre style="color: black; background: rgb(245, 242, 240); text-shadow: white 0px 1px; font-family: Consolas, Monaco, &quot;Andale Mono&quot;, &quot;Ubuntu Mono&quot;, monospace; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; overflow-wrap: normal; line-height: 1.5; tab-size: 4; hyphens: none; padding: 1em; margin: 0.5em 0px; overflow: auto;"><code style="color: black; background: none; text-shadow: white 0px 1px; font-family: Consolas, Monaco, &quot;Andale Mono&quot;, &quot;Ubuntu Mono&quot;, monospace; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; overflow-wrap: normal; line-height: 1.5; tab-size: 4; hyphens: none;"><span class="token" style="color: rgb(153, 153, 153);">{</span> path<span class="token" style="color: rgb(153, 153, 153);">:</span> <span class="token" style="color: rgb(102, 153, 0);">"/path-for-component"</span><span class="token" style="color: rgb(153, 153, 153);">,</span> name<span class="token" style="color: rgb(153, 153, 153);">:</span> <span class="token" style="color: rgb(102, 153, 0);">"ComponentName"</span><span class="token" style="color: rgb(153, 153, 153);">,</span> icon<span class="token" style="color: rgb(153, 153, 153);">:</span> <span class="token" style="color: rgb(102, 153, 0);">"iconClassName"</span><span class="token" style="color: rgb(153, 153, 153);">,</span> component<span class="token" style="color: rgb(153, 153, 153);">:</span> YourComponent<span class="token" style="color: rgb(153, 153, 153);">,</span> parentid<span class="token" style="color: rgb(153, 153, 153);">:</span> <span class="token" style="color: rgb(102, 153, 0);">"uniquename"</span> <span class="token" style="color: rgb(153, 153, 153);">}</span><span class="token" style="color: rgb(153, 153, 153);">,</span><br/>child: [<br/>	<span class="token" style="color: rgb(153, 153, 153);">{</span> path<span class="token" style="color: rgb(153, 153, 153);">:</span> <span class="token" style="color: rgb(102, 153, 0);">"/path-for-component"</span><span class="token" style="color: rgb(153, 153, 153);">,</span> name<span class="token" style="color: rgb(153, 153, 153);">:</span> <span class="token" style="color: rgb(102, 153, 0);">"ComponentName"</span> <span class="token" style="color: rgb(153, 153, 153);">}<br/>]</span><br/>{</span> path<span class="token" style="color: rgb(153, 153, 153);">:</span> <span class="token" style="color: rgb(102, 153, 0);">"/path-for-component"</span><span class="token" style="color: rgb(153, 153, 153);">,</span> component<span class="token" style="color: rgb(153, 153, 153);">:</span> <span class="token" style="color: rgb(102, 153, 0);">"ComponentName"</span>,</span> type<span class="token" style="color: rgb(153, 153, 153);">:</span> <span class="token" style="color: rgb(102, 153, 0);">"child"</span> <span class="token" style="color: rgb(153, 153, 153);">}<span class="token" style="color: rgb(153, 153, 153);">,</span></code></pre>
+
+
+                    	<ul><li><code class="highlighter-rouge">path</code> (path for your route - this will be seen in the browser url input - example <code class="highlighter-rouge">/dashboard</code>)</li><li><code class="highlighter-rouge">name</code> (name of your route - this will appear in the <code class="highlighter-rouge">Sidebar</code> and <code class="highlighter-rouge">AdminNavbar</code> components - example <code class="highlighter-rouge">Dashboard</code>)</li><li><code class="highlighter-rouge">icon</code> (icon to be displayed alongside with links in <code class="highlighter-rouge">Sidebar</code> component - example <code class="highlighter-rouge">i-heart</code>)</li><li><code class="highlighter-rouge">component</code> (this is the View component that you want to be displayed on the specified route - example <code class="highlighter-rouge">Dashboard</code>)</li><li><code class="highlighter-rouge">layout</code> (path of the layout in which the View component you want to be rendered - in our template demo you only have to options: <code class="highlighter-rouge">/admin</code> and <code class="highlighter-rouge">/auth</code> - but due to this routing system you can add more, for example <code class="highlighter-rouge">/new-layout</code>)</li></ul></li></ul></p>
+                    <p></p>
+                    <p> 
+					<img src="assets/img/1.jpg"/>
+					</p>
+                </section>
+ 
+
+
+               <section id="components">
+                    <div class="page-header">
+                        <h1>Common Components</h1>
+                    </div>
+                    <p>Basic App components like Header, Sidebar, Footer, Chat Bar are located under <code class="highlighter-rouge">src/components/common</code> folder.
+                    </p>
+                    <p class="lead">App Header</p>
+                    <p>The top bar of app is located at <code class="highlighter-rouge">src/components/common/Header/Header.jsx</code></p>
+                    <br/>
+                    <p class="lead">App Sidebar</p>
+                    <p>The sidebar of app is located at <code class="highlighter-rouge">src/components/common/Sidebar/Sidebar.jsx</code></p>
+                    <p>This sidebar is where all the menu links are displayed. It can also be called as left sidebar of the app</p>
+                    <br/>
+                    <p class="lead">ChatSidebar and Chatbar</p>
+                    <p>The chat sidebar of app is located at <code class="highlighter-rouge">src/components/common/ChatSidebar/ChatSidebar.jsx</code></p>
+                    <p>This sidebar is where all the chat contacts are displayed. It can also be called as right sidebar of the app</p>
+                    <p>The chatbar content of app is located at <code class="highlighter-rouge">src/components/common/Chatbar/Chatbar.jsx</code></p>
+                    <p>This Chatbar is having all the details like contacts, groups etc. displayed in chat sidebar.</p>
+                    <br/>
+                    <p class="lead">App Footer</p>
+                    <p>The footer of app is located at <code class="highlighter-rouge">src/components/common/Footer/Footer.jsx</code></p>
+                    <p>This footer is displayed at the end of each page in app.</p>
+                    <br/>
+                    <p class="lead">Header Messages</p>
+                    <p>The messages in header top bar of app is located at <code class="highlighter-rouge">src/components/common/Messages/Messages.jsx</code></p>
+                    <p>This messages are displayed in dropdown of the topbar.</p>
+                    <br/>
+                    <p class="lead">Header Notifications</p>
+                    <p>The messages in header top bar of app is located at <code class="highlighter-rouge">src/components/common/Notifications/Notifications.jsx</code></p>
+                    <p>This notifications are displayed in dropdown of the topbar.</p>
+                    <br/>
+
+
+
+                </section>
+ 
+                
+               <section id="layouts">
+                    <div class="page-header">
+                        <h1>Layout Settings</h1>
+                    </div>
+                    <p> 
+                    	Basic Layout design of each of 9 admins is located under <code class="highlighter-rouge">src/layouts</code> folder. All the common components of each admin are defined under layout files.
+                    </p>
+					<img src="assets/img/2.jpg"/>
+                    <br/>
+                    <p>All site has a admin can have its own individual layout setting. Settings like menu color, top bar color, chat open or closed, menu default size etc. can be defined in each admin individually.<br/>These setting files for each admin are located at <code class="highlighter-rouge">src/variables/settings</code> folder.</p>
+                    <br/>
+					<img src="assets/img/3.jpg"/>
+                    <br/>
+                </section>
+ 
+               <section id="variables">
+                    <div class="page-header">
+                        <h1>Variables</h1>
+                    </div>
+                    <p> 
+                    	To easily configure all the data in the app, we define them under variables section. These variable setting files for each admin are located at <code class="highlighter-rouge">src/variables</code> folder.
+
+                    	<br/>All the variables settings for each admin are separated in their own respective folder. Common layout based settings for each admin are under the <code class="highlighter-rouge">src/variables/settings</code> folder.
+                    </p>
+                </section>
+ 
+                
+                
+               <section id="grid">
+                    <div class="page-header">
+                        <h1>Bootstrap Grid and Breakpoints</h1>
+                    </div>
+<p>Since Bootstrap is developed to be mobile first, we use a handful of <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries">media queries</a> to create sensible breakpoints for our layouts and interfaces. These breakpoints are mostly based on minimum viewport widths and allow us to scale up elements as the viewport changes.</p>
+<p>Bootstrap primarily uses the following media query ranges—or breakpoints—in our source Sass files for our layout, grid system, and components.</p>
+<figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="c1">// Extra small devices (portrait phones, less than 576px)</span>
+<span class="c1">// No media query for `xs` since this is the default in Bootstrap</span>
+
+<span class="c1">// Small devices (landscape phones, 576px and up)</span>
+<span class="k">@media</span> <span class="p">(</span><span class="n">min-width</span><span class="o">:</span> <span class="m">576px</span><span class="p">)</span> <span class="p">{</span> <span class="nc">...</span> <span class="p">}</span>
+
+<span class="c1">// Medium devices (tablets, 768px and up)</span>
+<span class="k">@media</span> <span class="p">(</span><span class="n">min-width</span><span class="o">:</span> <span class="m">768px</span><span class="p">)</span> <span class="p">{</span> <span class="nc">...</span> <span class="p">}</span>
+
+<span class="c1">// Large devices (desktops, 992px and up)</span>
+<span class="k">@media</span> <span class="p">(</span><span class="n">min-width</span><span class="o">:</span> <span class="m">992px</span><span class="p">)</span> <span class="p">{</span> <span class="nc">...</span> <span class="p">}</span>
+
+<span class="c1">// Extra large devices (large desktops, 1200px and up)</span>
+<span class="k">@media</span> <span class="p">(</span><span class="n">min-width</span><span class="o">:</span> <span class="m">1200px</span><span class="p">)</span> <span class="p">{</span> <span class="nc">...</span> <span class="p">}</span></code></pre></figure>
+
+<p>While Bootstrap uses <code class="highlighter-rouge">em</code>s or <code class="highlighter-rouge">rem</code>s for defining most sizes, <code class="highlighter-rouge">px</code>s are used for grid breakpoints and container widths. This is because the viewport width is in pixels and does not change with the <a href="https://drafts.csswg.org/mediaqueries-3/#units">font size</a>.</p>
+
+<p>See how aspects of the Bootstrap grid system work across multiple devices with a handy table.</p>
+
+<table class="table table-bordered table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th class="text-center">
+        Extra small<br>
+        <small>&lt;576px</small>
+      </th>
+      <th class="text-center">
+        Small<br>
+        <small>≥576px</small>
+      </th>
+      <th class="text-center">
+        Medium<br>
+        <small>≥768px</small>
+      </th>
+      <th class="text-center">
+        Large<br>
+        <small>≥992px</small>
+      </th>
+      <th class="text-center">
+        Extra large<br>
+        <small>≥1200px</small>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th class="text-nowrap" scope="row">Max container width</th>
+      <td>None (auto)</td>
+      <td>540px</td>
+      <td>720px</td>
+      <td>960px</td>
+      <td>1140px</td>
+    </tr>
+    <tr>
+      <th class="text-nowrap" scope="row">Class prefix</th>
+      <td><code>.col-</code></td>
+      <td><code>.col-sm-</code></td>
+      <td><code>.col-md-</code></td>
+      <td><code>.col-lg-</code></td>
+      <td><code>.col-xl-</code></td>
+    </tr>
+    <tr>
+      <th class="text-nowrap" scope="row"># of columns</th>
+      <td colspan="5">12</td>
+    </tr>
+    <tr>
+      <th class="text-nowrap" scope="row">Gutter width</th>
+      <td colspan="5">30px (15px on each side of a column)</td>
+    </tr>
+    <tr>
+      <th class="text-nowrap" scope="row">Nestable</th>
+      <td colspan="5">Yes</td>
+    </tr>
+    <tr>
+      <th class="text-nowrap" scope="row">Column ordering</th>
+      <td colspan="5">Yes</td>
+    </tr>
+  </tbody>
+</table>
+
+
+                </section>
+ 
+
+               <section id="images">
+                    <div class="page-header">
+                        <h1>Public Images</h1>
+                    </div>
+                    <p> 
+                    	All the images are placed under <code class="highlighter-rouge">public/images</code> folder.
+                    	<br/>All the admin have separate folder for their respective images.
+                    </p>
+                </section>
+ 
+               <section id="logoimages">
+                    <div class="page-header">
+                        <h1>Logo and Favicon</h1>
+                    </div>
+                    <p> 
+                    	Site logo and favicon images are placed under <code class="highlighter-rouge">public/images</code> folder.
+                    	<br/>Along with logo and favicon apple touch icon images are also configured in this app. These images are also located under <code class="highlighter-rouge">public/images</code> folder.
+                    	<br/>
+                    	This images are included in <code class="highlighter-rouge">public/index.html</code> file.
+
+                    </p>
+					<img src="assets/img/4.jpg"/>
+                </section>
+
+               <section id="scss">
+                    <div class="page-header">
+                        <h1>CSS and SCSS</h1>
+                    </div>
+                    <p> 
+                    	All the images in this react admin app are configured using "node-sass". The scss files are located under <code class="highlighter-rouge">src/assets/scss/</code> folder. All the files are compiled at the time of starting the project.
+                    	Also any changes made is <code class="highlighter-rouge">src/assets/scss/zest-admin.scss</code> file leads to regeneration of <code class="highlighter-rouge">src/assets/scss/zest-admin.css</code> file.
+
+                    	This css file <code class="highlighter-rouge">src/assets/scss/zest-admin.css</code> is included in the <code class="highlighter-rouge">src/index.js</code> file.
+
+                    	<br/>
+
+						<img src="assets/img/5.jpg"/>
+
+                    	<br/>
+                    	All the color codes and variables are stored in <code class="highlighter-rouge">src/assets/scss/zest-admin/_variables.scss</code>
+                    	<br/>
+                    	You can make any color code change in this file and re-save <code class="highlighter-rouge">src/assets/scss/zest-admin.scss</code> file. This is regenarete the css file of the project.
+
+
+
+                    </p>
+                </section>
+
+
+               <section id="icons">
+                    <div class="page-header">
+                        <h1>Icons</h1>
+                    </div>
+                    <p> 
+                    	Fonts Icons used under this project are located at <code class="highlighter-rouge">src/assets/fonts/</code> folder. "Simple-line-icons" font icons are used in this project. This font icons are integrated in <code class="highlighter-rouge">src/index.js</code> file.
+
+                    	<br/>
+
+						<img src="assets/img/5.jpg"/>
+
+                    	<br/>
+                    	Along with these icons fontAwesome icon sets are also integrated in this app. You can view all the icons under general admin -> icon sets menu section.
+
+                    </p>
+                </section>
+
+               <section id="googlefonts">
+                    <div class="page-header">
+                        <h1>Google Fonts</h1>
+                    </div>
+                    <p> 
+                    	Google Fonts "Roboto" are used in this app. Following font code <code class="highlighter-rouge">&lt;link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" /&gt;</code> is used in <code class="highlighter-rouge">public/index.html</code> file.
+
+                    </p>
+                </section>
+
+
+               <section id="plugins-used">
+                    <div class="page-header">
+                        <h1>Plugins</h1>
+                    </div>
+                    <p> Following plugins are integrated under package.json file
+                    	<ul>
+							<li>Bootstrap 4</li>
+							<li>Chart.js</li>
+							<li>Font Awesome Icons</li>
+							<li>jQuery</li>
+							<li>jVectormap</li>
+							<li>Moment</li>
+							<li>Node SASS</li>
+							<li>Perfect Scrollbar</li>
+							<li>React Color Picker</li>
+							<li>React Slider</li>
+							<li>React Autosuggest</li>
+							<li>React Big Calendar</li>
+							<li>React Bootstrap Datatable</li>
+							<li>React CKEditor</li>
+							<li>React Count to</li>
+							<li>React Data grid</li>
+							<li>React Date picker</li>
+							<li>React Date Range picker</li>
+							<li>React Date Time Picker</li>
+							<li>React Wysiwyg editor</li>
+							<li>React Dropzone</li>
+							<li>React Google Maps</li>
+							<li>React Input Mask</li>
+							<li>React Masonry gallery</li>
+							<li>React Notification Alert</li>
+							<li>React Numeric Input</li>
+							<li>React Scripts</li>
+							<li>React Tagsinput</li>
+							<li>React Time Picker</li>
+							<li>Reactstrap</li>
+						</ul>
+
+						<img src="assets/img/6.jpg"/>
+
+
+                    </p>
+                </section>
+               <section id="build">
+                    <div class="page-header">
+                        <h1>Build App & Root Directory</h1>
+                    </div>
+                    <p>To Build your app for production, you need to run the "npm run build" command in your terminal window (all the details stated above).
+                    </p>
+                    <p>By default as per the package.json file homepage variable, the build will assume that this app is hosted at /zestreact/app/.</p>
+                    <br/>
+                    <img src="assets/img/7.jpg"/>
+                    <br/>
+                    <p>To change the directory to your own you need to replace the zestreact/app with your own directory various places. </p>
+
+                    <br/>Following are the changes need to be done:<br/>
+
+                    <p>1. Open <code class="highlighter-rouge">.env</code> file and replace <code class="highlighter-rouge">REACT_APP_BASEDIR=/zestreact/app</code> to <code class="highlighter-rouge">REACT_APP_BASEDIR=/new/directory</code> and <code class="highlighter-rouge">REACT_APP_IMGDIR=/zestreact/app</code> to  <code class="highlighter-rouge">REACT_APP_IMGDIR=/new/directory</code>. Note: Do not add <code class="highlighter-rouge">"/"</code> at the end of the directory path.</p>
+
+                    <img src="assets/img/8.jpg"/>
+
+                    <p>2. Open <code class="highlighter-rouge">.env.production</code> file and replace <code class="highlighter-rouge">REACT_APP_BASEDIR=/zestreact/app</code> to <code class="highlighter-rouge">REACT_APP_BASEDIR=/new/directory</code>. Note: Do not add <code class="highlighter-rouge">"/"</code> at the end of the directory path.</p>
+
+                    <img src="assets/img/9.jpg"/>
+
+                    <p>3. Open <code class="highlighter-rouge">package.json</code> file and replace   <code class="highlighter-rouge">"homepage": "https://jaybabani.com/zestreact/app",</code> to <code class="highlighter-rouge">"homepage": "https://yourdomain/new/directory",</code>. Note: Do not add <code class="highlighter-rouge">"/"</code> at the end of the directory path.</p>
+
+                    <img src="assets/img/10.jpg"/>
+                
+                    <p>After changing to desired directory, you must run npm run build command to generate the production build ready for deployment.</p>
+
+                    <p>This command will generate build folder in your project directory. This might take some time depending on the size of your project.</p>	
+					<p>Once this directory is generated, you can upload this directory on your server via Ftp. </p>
+					<p>Visit the directory url on your server, you should see your react site up and running online.</p>
+					<p>In case if images are not displayed properly then please copy the build/public/images folder to the root directory of your server.</p>
+                </section>
+
+
+               <section id="individual">
+                    <div class="page-header">
+                        <h1>Individual Admin</h1>
+                    </div>
+                    <p>All the 9 admins integrated in this app can separated into single admin. First take the backup of all your files and store in a safe place.
+                    </p>
+                    <p>Now lets assume you need to separate "general" admin dashboard from the directory and remove all the other admins.</p>
+					<p>Step 1: Go to <code class="highlighter-rouge">public/images</code> directory and delete all folders inside except <code class="highlighter-rouge">public/images/general</code>, <code class="highlighter-rouge">public/images/mail</code>, <code class="highlighter-rouge">public/images/profile</code>.</p>
+
+					
+					<p>Step 2: Go to <code class="highlighter-rouge">src/components</code> directory and delete all folders except <code class="highlighter-rouge">src/components/general</code>, <code class="highlighter-rouge">src/components/common</code>. Then open <code class="highlighter-rouge">src/components/index.js</code> file in your editor and delete all the sections except Common and General Components. Also make sure you export only components that are included in common and general components only.</p>
+					
+					<p>Step 3: Go to <code class="highlighter-rouge">src/layouts</code> directory and delete all .jsx files except <code class="highlighter-rouge">src/layouts/General.jsx</code>, <code class="highlighter-rouge">src/layouts/BlankPage.jsx</code>, <code class="highlighter-rouge">src/layouts/LoginPage.jsx</code>. Do not delete the <code class="highlighter-rouge">src/layouts/PageLayouts</code> folder. 
+
+						Then open <code class="highlighter-rouge">src/routes</code> folder delete all files except <code class="highlighter-rouge">src/routes/general.jsx</code>. Please make sure to open this file <code class="highlighter-rouge">src/routes/general.jsx</code> in your editor and remove the multi purpose components.</p>
+
+
+					<p>Step 4: Go to <code class="highlighter-rouge">src/variables</code> directory and delete all folders except <code class="highlighter-rouge">src/variables/general</code>, <code class="highlighter-rouge">src/variables/settings</code></p>.  Go to <code class="highlighter-rouge">src/variables/settings</code> directory and delete all files except <code class="highlighter-rouge">src/variables/settings/general.jsx</code>. Please do not delete the <code class="highlighter-rouge">src/variables/settings/pagelayouts</code> folder. </p>
+
+					<p>Step 4: Go to <code class="highlighter-rouge">src/views</code> directory and delete all folders except <code class="highlighter-rouge">src/views/general</code>. </p>
+
+
+                    <p>Note: You can repeat the above process for all other respective admins as well.</p>
+                </section>
+ 
+
+
+               <section id="thanks">
+                    <div class="page-header">
+                        <h1>Thank you</h1>
+                    </div>
+                    <p class="lead">Thank you for purchasing. If you have any questions that are beyond the scope of this documentation, please feel free to <a href="mailto:themepassion@jaybabani.com" target="_blank">contact me at email: themepassion@jaybabani.com</a>.
+                    </p>
+                </section>
+ 
+                
+            </div>
+        </div>
+    </div>
+    <!-- Footer-->
+    <footer class="bs-footer">
+        <div class="container">
+            <p>Copyright 2019 <a href="http://jaybabani.com/">jaybabani.com</a></p>
+        </div>
+    </footer>
+    <!-- Scripts-->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/holder.js"></script>
+    <script src="assets/js/google-code-prettify/prettify.js"></script>
+    <script src="assets/js/jquery.smooth-scroll.js"></script>
+    <script src="assets/js/application.js"></script>
+    <script>
+    $('.bs-sidenav a').smoothScroll();
+    window.prettyPrint && prettyPrint();
+    </script>
+</body>
+
+</html>
